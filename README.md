@@ -4,10 +4,12 @@
 ## Project: Recognizing digits from MNIST and SVHN dataset
 
 
-**Aim**
+**Aim**:
+
 Here, we want to train a algorithm on a synthetic dataset created by concatenating digits from MNIST dataset, and use that trained algorithm to predict digits in the SVHN dataset.
 
-**Approach taken**
+**Approach taken**:
+
 I used a convolutional neural network for this problem, since it has been touted as one of the best methods for image classification.
 First, MNIST dataset consists only of single digits. A dataset containing five digits had to be created. For this first it was required to convert the dataset from idx to numpy format. This was done with the help was of a package called idx2numpy (https://pypi.python.org/pypi/idx2numpy), information regarding which was obtained from this thread in forums:https://discussions.udacity.com/t/questions-about-step-1/204239.
 For feeding the data into the CNN, my theory was that since each element in dataset consists of 5 28 x 28 images stacked together side-to-side, at a time, widthwise only 28 pixels of the image will be fed to the model,(example: from 0 to 28). Since total width is 140, 5 classifiers will have to to be used and their cumulative loss function will be considered.
