@@ -5,7 +5,7 @@
 
 
 **Aim**
-Here, our aim is to train a algorithm on a synthetic dataset created by concatenating digits from MNIST dataset, and use that trained algorithm to predict digits in the SVHN dataset.
+Here, we want to train a algorithm on a synthetic dataset created by concatenating digits from MNIST dataset, and use that trained algorithm to predict digits in the SVHN dataset.
 
 **Approach taken**
 I used a convolutional neural network for this problem, since it has been touted as one of the best methods for image classification.
